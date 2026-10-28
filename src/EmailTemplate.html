@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 20px;
+  }
+  .email-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url('https://yourdomain.org/images/background.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #fcf8eb; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-height: 850px; 
+  }
+  .content {
+    padding: 260px 40px 40px 40px; 
+    color: #333333;
+  }
+  .ticket-box {
+    background-color: rgba(240, 247, 255, 0.85); 
+    border-left: 4px solid #0056b3;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 20px;
+  }
+  .kn-text {
+    font-size: 1.1em;
+    color: #b30000; 
+    margin-bottom: 2px;
+  }
+  .en-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .disclaimer-box {
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px dashed #cccccc;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="content">
+      <h2 class="kn-text" style="font-size: 1.5em;">ನಿಮ್ಮ ಆಗಮನಕ್ಕಾಗಿ ನಾವು ಕಾತುರದಿಂದ ಕಾಯುತ್ತಿದ್ದೇವೆ!</h2>
+      <h2 style="margin-top: 5px; margin-bottom: 25px;">We can't wait to see you!</h2>
+      
+     <p class="kn-text">ನಮ್ಮ ಮುಂಬರುವ ಸಮುದಾಯದ ಕಾರ್ಯಕ್ರಮಕ್ಕೆ ನೋಂದಾಯಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು. ನಿಮ್ಮ ನೋಂದಣಿ ವಿವರಗಳು ಇಲ್ಲಿವೆ:</p>
+      <p class="en-text">Thank you for registering for our upcoming community event. Here are your registration details:</p>
+      
+      <div class="ticket-box">
+        <p style="font-size: 18px; margin-top: 0;"><strong>Confirmation Code:</strong> <span style="color: #0056b3;"><?= code ?></span></p>
+        <p style="margin: 5px 0;"><strong>Adults:</strong> <?= adults ?></p>
+        <p style="margin: 5px 0;"><strong>Kids:</strong> <?= kids ?></p>
+      </div>
+      
+      <p class="kn-text" style="margin-top: 25px;">ಕಾರ್ಯಕ್ರಮದ ಪ್ರವೇಶಕ್ಕಾಗಿ ಸ್ವಾಗತ ಕಟ್ಟೆಯಲ್ಲಿ ಈ ಮೇಲಿನ ಕನ್ಫರ್ಮೇಷನ್ ಕೋಡ್ ಅನ್ನು ನೀಡಿ.</p>
+      <p class="en-text">Please have your confirmation code ready at the entrance.</p>
+
+      <div class="disclaimer-box">
+        <p class="kn-text" style="font-size: 1em; color: #880000;"><strong>ಸೂಚನೆ:</strong> ಲಭ್ಯವಿರುವ ಸೀಮಿತ ತಂತ್ರಜ್ಞಾನವನ್ನು ಬಳಸಿ ಈ ನೋಂದಣಿ ದೃಢೀಕರಣವನ್ನು ಸ್ವಯಂಚಾಲಿತಗೊಳಿಸಲಾಗಿದೆ. ಏನಾದರೂ ದೋಷಗಳಿದ್ದಲ್ಲಿ, ದಯವಿಟ್ಟು ಸ್ವಾಗತ ಕೌಂಟರ್‌ನಲ್ಲಿ ತಿಳಿಸಿ ಅಥವಾ <a href="mailto:info@yourdomain.org" style="color: #0056b3;">info@yourdomain.org</a> ಗೆ ಇಮೇಲ್ ಮಾಡಿ. ನಿಮ್ಮ ನಿರಂತರ ಬೆಂಬಲಕ್ಕೆ ನಮ್ಮ ಅನಂತ ಧನ್ಯವಾದಗಳು!</p>
+        <p class="en-text" style="color: #555555; margin-bottom: 0;"><strong>Note:</strong> This registration confirmation has been automated with the limited tooling available, there are chances of errors, please do report at the reception desk or email your concerns at <a href="mailto:info@yourdomain.org" style="color: #0056b3;">info@yourdomain.org</a>. We appreciate your unconditional support as always!</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p><strong>&copy; 2026 Your Community Organization. All rights reserved.</strong></p>
+    </div>
+  </div>
+</body>
+</html>
