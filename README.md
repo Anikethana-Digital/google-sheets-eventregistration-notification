@@ -62,4 +62,4 @@ To make the script run automatically when new data is added:
 When a new registration is submitted, the script reads the latest rows. It checks the `Status` column. If the status is empty, it injects the row's data (Confirmation Code, Adults, Kids) into the HTML template using `<?= variable ?>` tags. It then sends the email via the Gmail API using your custom alias and marks the row as "Sent".
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. Free for all community groups to use, modify, and distribute!
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details. Free for all community groups to use, modify, and distribute!
